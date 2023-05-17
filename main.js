@@ -22,10 +22,9 @@ const API_KEY = "&appid=2bd7d9d74c6cd1842cd9ae4e615a4169"
 const API_UNITS = "&units=metric"
 const API_CNT = "&cnt=8"
 
-let $lat = undefined
-let $lon = undefined
-let $defaultCity = undefined
-
+let $lat
+let $lon
+let $defaultCity
 function geoLocalizationUser() {
 	return new Promise((resolve, reject) => {
 		navigator.geolocation.getCurrentPosition(
@@ -54,7 +53,7 @@ geoLocalizationUser()
 	.then(() => {
 		getCity()
 	})
-	.catch((err) => console.error())
+	.catch((err) => console.error(err))
 
 const getCity = async () => {
 	const city = $search.value || $defaultCity || "London"
