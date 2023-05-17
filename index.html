@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WeatherApp</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>Weather</h1>
+				<div>
+					<input type="text" id="search" placeholder="Search Your City" />
+					<label for="search" class="loupe"></label>
+				</div>
+			</div>
+			<div class="main-weather">
+				<div class="data">
+					<p class="temperature-now"></p>
+					<p class="city"></p>
+				</div>
+
+				<img class="weather-img" src="" />
+
+				<div class="day-con">
+					<p class="clock"></p>
+					<p class="day today"></p>
+					<p class="date"></p>
+				</div>
+			</div>
+			<div class="info">
+				<div class="weather-details">
+					<div>
+						<div class="humidity">
+							<span>Humidity</span>
+							<p></p>
+						</div>
+						<div class="pressure">
+							<span>Pressure</span>
+							<p></p>
+						</div>
+					</div>
+					<div>
+						<div class="visibility">
+							<span>Visibility</span>
+							<p></p>
+						</div>
+						<div class="wind-speed">
+							<span>Wind Speed</span>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="weekly">
+					<div class="item">
+						<div class="weekly-details">
+							<p class="day"></p>
+							<p class="temperature"></p>
+						</div>
+						<img class="weather-img" src="" alt="" width="70" />
+					</div>
+					<div class="item">
+						<div class="weekly-details">
+							<p class="day"></p>
+							<p class="temperature"></p>
+						</div>
+						<img class="weather-img" src="" alt="" width="70" />
+					</div>
+					<div class="item">
+						<div class="weekly-details">
+							<p class="day"></p>
+							<p class="temperature"></p>
+						</div>
+						<img class="weather-img" src="" alt="" width="70" />
+					</div>
+					<div class="item">
+						<div class="weekly-details">
+							<p class="day"></p>
+							<p class="temperature"></p>
+						</div>
+						<img class="weather-img" src="" alt="" width="70" />
+					</div>
+					<div class="item">
+						<div class="weekly-details">
+							<p class="day"></p>
+							<p class="temperature"></p>
+						</div>
+						<img class="weather-img" src="" alt="" width="70" />
+					</div>
+					<div class="item">
+						<div class="weekly-details">
+							<p class="day"></p>
+							<p class="temperature"></p>
+						</div>
+						<img class="weather-img" src="" alt="" width="70" />
+					</div>
+					<div class="item">
+						<div class="weekly-details">
+							<p class="day"></p>
+							<p class="temperature"></p>
+						</div>
+						<img class="weather-img" src="" alt="" width="70" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+		<script src="main.js"></script>
+	</body>
+</html>
