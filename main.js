@@ -15,8 +15,8 @@ const $title = document.querySelector("h1")
 const $timeOfDay = document.querySelector("body")
 const $currentDate = new Date()
 
-const API_LINK_LOCALIZATION = "http://api.openweathermap.org/geo/1.0/direct?q="
-const API_REVERSE = "http://api.openweathermap.org/geo/1.0/reverse?lat="
+const API_LINK_LOCALIZATION = "https://api.openweathermap.org/geo/1.0/direct?q="
+const API_REVERSE = "https://api.openweathermap.org/geo/1.0/reverse?lat="
 const API_LINK = "https://api.openweathermap.org/data/2.5/forecast?lat="
 const API_KEY = "&appid=2bd7d9d74c6cd1842cd9ae4e615a4169"
 const API_UNITS = "&units=metric"
